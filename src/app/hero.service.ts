@@ -13,7 +13,7 @@ const httpOptions = {
 @Injectable()
 export class HeroService {
 
-  private heroesUrl = 'http://localhost:3000/heroes';  // URL to web api
+  private heroesUrl = '/heroes';  // URL to web api
 
   // service-in-service scenario: you inject the MessageService into the HeroService which is injected into the HeroesComponent.
   constructor(
